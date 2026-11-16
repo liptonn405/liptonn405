@@ -7,17 +7,27 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body data-bs-theme="dark">
     <header>
         <h1>Portfolio</h1>
-        <h2>Лиханов Даниил</h2>
-        <p>СПбГУ, факультет Математики и Механики, направление «Программная инженерия»</p>
-        <p>Интересы : Системное программирование, разработка игр.</p>
-        <img src="images/photo.jpg" alt="Моя фотография"
-             style="width: 200px; height: 180px; object-fit: cover;">
+
+        <div class="row gx-5 gy-3 align-items-center">
+            <div class="col-12 col-md-auto">
+                <img src="images/photo.jpg"
+                     class="img-thumbnail"
+                     alt="Моя фотография"
+                     style="width: 200px; height: 180px; object-fit: cover;">
+            </div>
+
+            <div class="col-12 col-md">
+                <h2 class="mb-3">Лиханов Даниил</h2>
+                <p class="mb-3">СПбГУ, факультет Математики и Механики, направление «Программная инженерия»</p>
+                <p>Интересы: системное программирование, разработка игр.</p>
+            </div>
+        </div>
     </header>
 
-    <main>
+    <main data-bs-theme="dark">
         <h2>Обо мне</h2>
         <p>Я учусь на матмехе СПбГУ по направлению «Программная инженерия».</p>
         <p>Нравится программировать и создавать интересные проекты но их пока не много.</p>
@@ -26,50 +36,111 @@
 
         <h2>Мои увлечения</h2>
         <p>В свободное время я занимаюсь брейкингом.</p>
-        <img src="images/photo2.jpg" alt="Моя фотография"
+
+        <img src="images/photo2.jpg"
+             class="img-thumbnail mt-4 me-3 align-top"
+             alt="Моя фотография"
              style="width: 200px; height: 180px; object-fit: cover;">
-        <img src="images/photo3.jpg" alt="Моя фотография"
+
+        <img src="images/photo3.jpg"
+             class="img-thumbnail mt-4 me-3 align-top"
+             alt="Моя фотография"
              style="width: 200px; height: 180px; object-fit: cover;">
-        <img src="images/gif.gif" alt="Моя фотография"
+
+        <img src="images/gif.gif"
+             class="img-thumbnail mt-4 me-3 align-top"
+             alt="Моя фотография"
              style="width: 200px; height: 180px; object-fit: cover;">
-        
 
         <h2>Мои проекты</h2>
 
-     <div class="projects">
-      <article class="project-card">
-        <h3>Библиотека обработки 32-битных чисел с плавающей точкой по стандарту IEEE 754</h3>
-        <p>Язык программирования — C.</p>
-        <p>Проект находится в приватном репозитории.</p>
-      </article>
+        <div class="row g-4">
+            <div class="col-12 col-md-6">
+                <article class="card h-100">
+                    <div class="card-body d-flex flex-column p-4">
+                        <h3 class="card-title h5 mb-3">
+                            Библиотека обработки 32-битных чисел с плавающей
+                            точкой по стандарту IEEE 754
+                        </h3>
 
-     <article class="project-card">
-        <h3>Архиватор на базе алгоритма Хаффмана</h3>
-        <p>Язык программирования — C++.</p>
-        <a href="https://github.com/liptonn405/huffman-archive">Открыть на GitHub</a>
-     </article>
-     </div>
+                        <p class="card-text text-body-secondary small mb-3">
+                            Язык программирования — C.
+                        </p>
 
-     <h2>Чем занимаюсь на данный момент</h2>
-     <ul>
-        <li>Практикую С\С++
-            <img src="images/photo4.jpg" class="inline-icon" alt="">
-        </li>
-        <li>Изучаю основы компьютерных сетей и принципы их работы</li>
-        <li>Разрабатываю ИИ агента</li>
-     </ul>
+                        <p class="card-text text-body-secondary small mt-auto mb-0">
+                            Проект находится в приватном репозитории.
+                        </p>
+                    </div>
+                </article>
+            </div>
 
-     <h2>В планах</h2>
-     <ul>
-        <li>Изучить разработку игр (скорее всего как хобби)</li>
-     </ul>
+            <div class="col-12 col-md-6">
+                <article class="card h-100">
+                    <div class="card-body d-flex flex-column p-4">
+                        <h3 class="card-title h5 mb-3">
+                            Архиватор на базе алгоритма Хаффмана
+                        </h3>
 
+                        <p class="card-text text-body-secondary small mb-3">
+                            Язык программирования — C++.
+                        </p>
+
+                        <a class="btn btn-outline-light align-self-start mt-auto"
+                           href="https://github.com/liptonn405/huffman-archive">
+                            Открыть на GitHub
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <section class="card mt-4">
+            <div class="card-body p-4">
+                <h2 class="card-title h5 mb-3">
+                    Чем занимаюсь на данный момент
+                </h2>
+
+                <ul class="mb-0">
+                    <li class="mb-2">
+                        Практикую C/C++
+                        <img src="images/photo4.jpg"
+                             class="img-thumbnail ms-2 align-middle"
+                             alt=""
+                             style="width: 90px;">
+                    </li>
+                    <li class="mb-2">
+                        Изучаю основы компьютерных сетей и принципы их работы
+                    </li>
+                    <li>Разрабатываю ИИ агента</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="card mt-4">
+            <div class="card-body p-4">
+                <h2 class="card-title h5 mb-3">В планах</h2>
+
+                <ul class="mb-0">
+                    <li>Изучить разработку игр (скорее всего как хобби)</li>
+                </ul>
+            </div>
+        </section>
     </main>
+
     <footer>
         <h2>Контакты</h2>
-        <a href="https://github.com/liptonn405"> GitHub</a>
-        <a href="https://t.me/mlndxxplx">Telegram</a>
-        <p>Электронная почта: danilllihanov321@gmail.com</p> 
+
+        <a class="btn btn-outline-light"
+           href="https://github.com/liptonn405">
+            GitHub
+        </a>
+
+        <a class="btn btn-outline-light"
+           href="https://t.me/mlndxxplx">
+            Telegram
+        </a>
+
+        <p>Электронная почта: danilllihanov321@gmail.com</p>
     </footer>
 </body>
 </html>
